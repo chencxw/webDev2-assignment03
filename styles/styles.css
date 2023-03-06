@@ -33,12 +33,12 @@
 /* Header (Navigation bar)
 --------------------------------------------- */
 .site-header {
-    background-color: var(--brand-color);
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0.5rem 1rem;
+    border-bottom: 2px solid var(--brand-color)
 }
 
 .logo {
@@ -47,12 +47,12 @@
 
 .logo {
     text-decoration: none;
-    color: #fff;
-    font-size: 2rem;
+    color: var(--brand-color);
+    font-size: 1.8rem;
 }
 
 a.logo:visited {
-    color: #fff;
+    color: var(--brand-color);
 }
 
 .hamburger-menu {
@@ -144,15 +144,16 @@ nav a {
 	padding: 0 10px;
 	display: block;
 	border-right: none;
-	color: white;
+	color: #000;
 	line-height: 40px;
 	text-align: center;
+    font-size: 1.2rem;
 }
 
 nav a:hover,
 nav a:active,
 nav a:focus {
-  background-color: var(--brand-color-light);
+  color: var(--brand-color-light);
 }
 
 
