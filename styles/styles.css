@@ -1,0 +1,165 @@
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+
+/* Elements
+--------------------------------------------- */
+
+
+/* Links
+--------------------------------------------- */
+
+
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+:root {
+    --brand-color: #0A69DA;
+    --brand-color-light: #679ad9;
+}
+
+/* Header (Navigation bar)
+--------------------------------------------- */
+.site-header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    border-bottom: 2px solid var(--brand-color)
+}
+
+.logo {
+    width: fit-content;
+}
+
+.logo {
+    text-decoration: none;
+    color: var(--brand-color);
+    font-size: 1.8rem;
+}
+
+a.logo:visited {
+    color: var(--brand-color);
+}
+
+.hamburger-menu {
+    margin: 1rem 0rem 1.5rem 0;
+	display: block;
+	width: 2.5rem;
+	background-color: transparent;
+	border: none;
+	padding:0;
+}
+
+.hamburger-menu-content {
+	display: block;
+	height: 24px;
+	cursor: pointer;
+}
+
+.hamburger-menu .bar {
+	display: block;
+	height: 4px;
+	background-color: #000000;
+	width: 100%;
+	top: 10px;
+	position: relative;
+	transition: all 0.3s ease-in-out;
+}
+
+.hamburger-menu .bar:before {
+	content: "";
+	height: 4px;
+	background-color: #000000;
+	width: 100%;
+	position: absolute;
+	top: 10px;
+	left: 0;
+	transition: all 0.3s ease-in-out;
+}
+
+.hamburger-menu .bar:after {
+	content: "";
+	height: 4px;
+	background-color: #000000;
+	width: 100%;
+	position: absolute;
+	top: -10px;
+	left: 0;
+	transition: all 0.3s ease-in-out;
+}
+
+.show .bar {
+	background-color: transparent;
+}
+
+.show .bar:before {
+	top: 0;
+	transform: rotate(45deg);
+}
+
+.show .bar:after {
+	top: 0;
+	transform: rotate(-45deg);
+}
+
+nav {
+	width: 100%;
+	height: 0;
+	visibility: hidden;
+	overflow: hidden;
+}
+
+nav.activated {
+	transition: height 0.3s ease, visibility 0s 0.3s;
+}
+
+.show nav {
+	transition: height 0.3s ease, visibility 0s;
+	visibility: visible;
+	height: 200px;
+}
+
+nav ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+nav a {
+	text-decoration: none;
+	padding: 0 10px;
+	display: block;
+	border-right: none;
+	color: #000;
+	line-height: 40px;
+	text-align: center;
+    font-size: 1.2rem;
+}
+
+nav a:hover,
+nav a:active,
+nav a:focus {
+  color: var(--brand-color-light);
+}
+
+
+/* Main
+--------------------------------------------- */
+
+
+/* Footer
+--------------------------------------------- */
