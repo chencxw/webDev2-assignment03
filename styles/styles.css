@@ -91,7 +91,8 @@ nav a {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0.5rem 1rem;
-    border-bottom: 2px solid var(--brand-color)
+    border-bottom: 2px solid var(--brand-color);
+	min-width: 15.625rem;
 }
 
 .logo {
@@ -202,12 +203,34 @@ nav.activated {
 	line-height: 40px;
 	text-align: center;
     font-size: 1.2rem;
+	font-family: var(--font-body);
 }
 
 #main-navigation a:hover,
 #main-navigation a:active,
 #main-navigation a:focus {
   color: var(--brand-color-light);
+}
+
+@media (min-width: 50em) {
+	#main-navigation {
+		width: fit-content;
+		height: auto;
+		visibility: visible;
+		background-color: #fff;
+	}
+
+	#main-navigation ul {
+		display: flex;
+	}
+
+	#main-navigation a {
+		color: var(--brand-color);
+	}
+
+	.hamburger-menu {
+		display: none;
+	}
 }
 
 
