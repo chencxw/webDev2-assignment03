@@ -209,7 +209,8 @@ nav.activated {
 #main-navigation a:hover,
 #main-navigation a:active,
 #main-navigation a:focus {
-  color: var(--brand-color-light);
+  color: #fff;
+  background-color: var(--brand-color-light);
 }
 
 @media (min-width: 50em) {
