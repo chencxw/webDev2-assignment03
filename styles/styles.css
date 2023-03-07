@@ -310,7 +310,7 @@ main a:focus {
 	margin-top: 0;
 }
 
-@media (min-width: 50rem) {
+@media (min-width: 50em) {
 
 	main {
 		display: grid;
@@ -343,8 +343,6 @@ main a:focus {
 	}
 
 }
-
-
 
 /* Sidebar */
 aside {
