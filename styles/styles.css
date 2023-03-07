@@ -117,7 +117,7 @@ a.logo:visited {
 }
 
 
-nav {
+#main-navigation {
 	width: 100%;
 	height: 0;
 	visibility: hidden;
@@ -128,19 +128,19 @@ nav.activated {
 	transition: height 0.3s ease, visibility 0s 0.3s;
 }
 
-.show nav {
+.show #main-navigation {
 	transition: height 0.3s ease, visibility 0s;
 	visibility: visible;
 	height: 200px;
 }
 
-nav ul {
+#main-navigation ul {
 	padding: 0;
 	margin: 0;
 	list-style: none;
 }
 
-nav a {
+#main-navigation a {
 	text-decoration: none;
 	padding: 0 10px;
 	display: block;
@@ -151,9 +151,9 @@ nav a {
     font-size: 1.2rem;
 }
 
-nav a:hover,
-nav a:active,
-nav a:focus {
+#main-navigation a:hover,
+#main-navigation a:active,
+#main-navigation a:focus {
   color: var(--brand-color-light);
 }
 
