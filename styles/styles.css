@@ -191,6 +191,57 @@ main {
 }
 
 
+/* Sidebar */
+aside {
+	padding: 1rem;
+	max-width: 25rem;
+}
+
+aside article {
+	margin-bottom: 2rem;
+}
+
+aside h3 {
+	color: var(--brand-color)
+}
+
+h3 + p > svg {
+	fill: var(--brand-color-light)
+}
+
+aside p > a {
+	text-decoration: none;
+	color: var(--brand-color)
+}
+
+aside p > a:hover,
+aside p > a:active,
+aside p > a:focus {
+	color: var(--brand-color-light);
+}
+
+aside p > a:hover {
+	transition: all 0.5s;
+	font-size: 1.3rem;
+}
+
+aside li {
+	color: var(--brand-color)
+}
+
+aside ul a {
+	text-decoration: none;
+	color: #000;
+}
+
+aside ul a:hover {
+	color: var(--brand-color-light)
+}
+
+
+
+
+
 /* Footer
 --------------------------------------------- */
 .site-footer {
