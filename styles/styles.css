@@ -261,6 +261,10 @@ main a:focus {
   text-decoration: underline;
 }
 
+.main-article {
+  
+}
+
 .main-article li {
   color: var(--brand-color)
 }
