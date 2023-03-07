@@ -11,8 +11,8 @@
   --pad-half: calc(var(--pad) / 2);
 
   /* Font-Stacks	*/
-  --font-body: "Libre Franklin", sans-serif;
-  --font-headings: "Cormorant Garamond", serif;
+  --font-body: Arial, Helvetica, sans-serif;
+  --font-headings: Georgia, serif;
 }
 
 html {
