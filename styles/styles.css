@@ -287,7 +287,9 @@ main a:focus {
 	overflow: hidden;
 }
 
-.small-articles:hover {
+.small-articles:hover,
+.small-articles:active,
+.small-articles:focus {
 	transform: scale(1.05);
 	color: var(--brand-color);
 	text-decoration: none;
