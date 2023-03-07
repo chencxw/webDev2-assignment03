@@ -2,12 +2,13 @@
 :root {
 	--brand-color: #0A69DA;
 	--brand-color-light: #679ad9;
+	--text-color: #000000;
 
   	--base-width: 90%;
 
   	/* Layout Variables */
-  	--pad: calc(var(--space) * 1rem);
-  	--pad-half: calc(var(--pad) / 2);
+  	--pad: 1rem;
+  	--pad-half: .5rem;
 
   	/* Font-Stacks	*/
   	--font-body: Arial, Helvetica, sans-serif;
@@ -82,22 +83,25 @@ nav a {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0.5rem 1rem;
-    border-bottom: 2px solid var(--brand-color);
+    /* border-bottom: 2px solid var(--brand-color); */
 	min-width: 15.625rem;
+	background-color: var(--brand-color-light)
 }
 
 .logo {
     width: fit-content;
+	font-family: var(--font-headings);
+	font-weight: 800 ;
 }
 
 .logo {
     text-decoration: none;
-    color: var(--brand-color);
+    color: var(--text-color);
     font-size: 1.8rem;
 }
 
 a.logo:visited {
-    color: var(--brand-color);
+    color: white;
 }
 
 .hamburger-menu {
@@ -194,14 +198,16 @@ nav.activated {
 	line-height: 40px;
 	text-align: center;
     font-size: 1.2rem;
-	font-family: var(--font-body);
+	font-family: var(--font-headings);
+	font-weight: 600;
 }
 
 #main-navigation a:hover,
 #main-navigation a:active,
 #main-navigation a:focus {
-  color: #fff;
-  background-color: var(--brand-color-light);
+	color: #fff;
+	background-color: var(--brand-color-light);
+	padding: 0.2rem 1rem;
 }
 
 @media (min-width: 50em) {
@@ -209,7 +215,7 @@ nav.activated {
 		width: fit-content;
 		height: auto;
 		visibility: visible;
-		background-color: #fff;
+		/* background-color: #fff; */
 	}
 
 	#main-navigation ul {
@@ -217,12 +223,10 @@ nav.activated {
 	}
 
 	#main-navigation a {
-		color: var(--brand-color);
+		color: var(--text-color);
 	}
 
 	#main-navigation a:hover {
-		color: #fff;
-		background-color: var(--brand-color-light);
 		padding: 0.2rem 1rem;
 	}
 
