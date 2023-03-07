@@ -353,6 +353,10 @@ aside article {
 	margin-bottom: 2rem;
 }
 
+aside article:first-child {
+	height: 15rem;
+}
+
 aside h3 {
 	color: var(--brand-color)
 }
