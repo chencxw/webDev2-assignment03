@@ -160,6 +160,35 @@ nav a:focus {
 /* Main
 --------------------------------------------- */
 
+main {
+    /* display: flex;
+    flex-direction: column; */
+    background-color: var(--bg-color, white);
+    color: var(--text-color, black);
+    width: var(--base-width);
+    flex: 1 1 0%;
+    padding: var(--pad-half);
+    border-radius: 0 0 var(--pad-half) var(--pad-half);
+}
+
+.articles-wrapper{
+    max-width: 80rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: var(--pad);
+    /* grid-template-columns: repeat(3, 1fr); */
+}
+.small-articles {
+    --pad:  8px;
+    position: relative;
+    width: var(--three-col);
+    margin: 0px;
+    padding: var(--pad);
+    border: 2px solid var(--brand-color);
+}
+
 
 /* Footer
 --------------------------------------------- */
