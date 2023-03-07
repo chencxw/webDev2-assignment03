@@ -190,5 +190,34 @@ main {
 }
 
 
+/* Sidebar */
+aside {
+	padding: 1rem;
+}
+
+aside h3 {
+	color: var(--brand-color)
+}
+
+h3 + p > svg {
+	fill: var(--brand-color)
+}
+
+aside p > a {
+	text-decoration: none;
+	color: var(--brand-color)
+}
+
+aside p > a:hover,
+aside p > a:active,
+aside p > a:focus {
+	color: var(--brand-color-light);
+}
+
+
+
+
+
+
 /* Footer
 --------------------------------------------- */
