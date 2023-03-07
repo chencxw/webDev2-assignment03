@@ -293,16 +293,33 @@ nav.activated {
 
 @media (min-width: 50rem) {
 
+	main {
+		display: grid;
+		grid-template-columns: 3fr 1fr;
+	}
+
+	.main-article {
+		grid-column: 1/3;
+	}
+
 	.articles-wrapper{
 		--pad: 2rem;
-		max-width: 90%;
+		max-width: 100%;
 		gap: var(--pad);
+		grid-template-columns: 1/2;
+		grid-template-rows: 3/4;
 	}
 
 	.small-articles {
 		width: var(--three-col);
 		margin: 0;
 	}
+
+	aside {
+		grid-column: 2/3;
+		grid-row: 3/4;
+	}
+
 }
 
 
