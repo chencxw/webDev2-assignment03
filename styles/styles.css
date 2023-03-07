@@ -1,18 +1,22 @@
 /* Global Variables */
 :root {
-  --bg-color: white;
-  --text-color: black;
+	--brand-color: #0A69DA;
+	--brand-color-light: #679ad9;
 
-  --base-width: 90%;
+  	--base-width: 90%;
 
-  /* Layout Variables */
-  --space: calc(30 / 16);
-  --pad: calc(var(--space) * 1rem);
-  --pad-half: calc(var(--pad) / 2);
+  	/* Layout Variables */
+  	--pad: calc(var(--space) * 1rem);
+  	--pad-half: calc(var(--pad) / 2);
 
-  /* Font-Stacks	*/
-  --font-body: Arial, Helvetica, sans-serif;
-  --font-headings: Georgia, serif;
+  	/* Font-Stacks	*/
+  	--font-body: Arial, Helvetica, sans-serif;
+  	--font-headings: Georgia, serif;
+	
+	/* Grid Variables */
+	--one-col: 100%;
+	--two-col: 49%;
+	--three-col: 32%;
 }
 
 html {
@@ -68,19 +72,6 @@ nav a {
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     border: 0;
-}
-
-:root {
-    --brand-color: #0A69DA;
-    --brand-color-light: #679ad9;
-	--pad: 1rem;
-	--pad-half: .5rem;
-
-	/* Grid Variables */
-	--one-col: 100%;
-	--two-col: 49%;
-	--three-col: 32%;
-	--four-col: 23.5%;
 }
 
 /* Header (Navigation bar)
