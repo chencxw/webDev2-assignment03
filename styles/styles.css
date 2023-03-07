@@ -329,6 +329,7 @@ main a:focus {
 
 	.small-articles {
 		width: var(--three-col);
+		max-width: 26rem;
 		min-width: 18rem;
 		margin: 0;
 	}
