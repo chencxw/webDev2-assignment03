@@ -290,6 +290,7 @@ main a:focus {
 .small-articles:hover {
 	transform: scale(1.05);
 	color: var(--brand-color);
+	text-decoration: none;
 }
 
 .articles-wrapper img {
