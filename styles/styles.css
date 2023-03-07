@@ -216,4 +216,12 @@ main {
   height: 2.5rem;
 }
 
+@media (min-width: 50rem){
+  .site-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 
