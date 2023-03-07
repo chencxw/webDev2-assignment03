@@ -36,6 +36,7 @@ body {
 h1,
 h2,
 h3,
+h4,
 nav a {
   font-family: var(--font-headings);
 }
@@ -245,7 +246,7 @@ nav.activated {
 main {
   background-color: var(--bg-color, white);
   color: var(--text-color, black);
-  padding: var(--pad-half);
+  padding: var(--pad);
 }
 
 main a,
@@ -262,12 +263,21 @@ main a:focus {
 }
 
 .main-article {
-  
+  width: 100%;
+  margin: 0 auto 3rem;
+  padding: 1rem 0;
+  border-bottom: double var(--brand-color-light);
+}
+
+.main-article img {
+  display: block;
+  object-fit: cover;
 }
 
 .main-article li {
   color: var(--brand-color)
 }
+
 
 .articles-wrapper{
 
