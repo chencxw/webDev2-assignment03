@@ -338,6 +338,11 @@ main a:focus {
 		grid-column: 1/3;
 	}
 
+  .top-news, 
+  .main-article-text {
+    padding: 0 1rem;
+  }
+
 	.articles-wrapper{
 		--pad: 2rem;
 		max-width: 100%;
@@ -358,6 +363,21 @@ main a:focus {
 		grid-column: 2/3;
 		grid-row: 3/4;
 	}
+
+}
+
+@media (min-width: 62.5rem) {
+
+  .main-article {
+    display: flex;
+    flex-direction: row;
+		grid-column: 1/3;
+	}
+
+  .main-article img {
+    min-width: 35rem;
+  }
+  
 
 }
 
