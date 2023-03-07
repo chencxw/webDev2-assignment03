@@ -205,14 +205,9 @@ nav.activated {
 --------------------------------------------- */
 
 main {
-    /* display: flex;
-    flex-direction: column; */
-    background-color: var(--bg-color, white);
-    color: var(--text-color, black);
-    width: var(--base-width);
-    flex: 1 1 0%;
-    padding: var(--pad-half);
-    border-radius: 0 0 var(--pad-half) var(--pad-half);
+  background-color: var(--bg-color, white);
+  color: var(--text-color, black);
+  padding: var(--pad-half);
 }
 
 main a,
@@ -225,6 +220,7 @@ main a:hover,
 main a:active,
 main a:focus {
   color: var(--brand-color);
+  text-decoration: underline;
 }
 
 .main-article li {
