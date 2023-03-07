@@ -1,3 +1,48 @@
+/* Global Variables */
+:root {
+  --bg-color: white;
+  --text-color: black;
+
+  --base-width: 90%;
+
+  /* Layout Variables */
+  --space: calc(30 / 16);
+  --pad: calc(var(--space) * 1rem);
+  --pad-half: calc(var(--pad) / 2);
+
+  /* Font-Stacks	*/
+  --font-body: "Libre Franklin", sans-serif;
+  --font-headings: "Cormorant Garamond", serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Typography */
+body {
+  line-height: 1.5;
+  font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+nav a {
+  font-family: var(--font-headings);
+}
+
+
 /*--------------------------------------------------------------
 # Base
 --------------------------------------------------------------*/
@@ -170,6 +215,10 @@ main {
     flex: 1 1 0%;
     padding: var(--pad-half);
     border-radius: 0 0 var(--pad-half) var(--pad-half);
+}
+
+.main-article {
+
 }
 
 .articles-wrapper{
