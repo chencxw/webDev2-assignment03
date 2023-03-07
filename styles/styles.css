@@ -5,15 +5,13 @@
 	--brand-color-light: #679ad9;
 	--text-color: #000000;
 
+  	/* Layout Variables */
+  	--pad: 1rem;
+  	--pad-half: .5rem;
 
-  /* Layout Variables */
-  --pad: 1rem;
-  --pad-half: .5rem;
-
-
-  /* Font-Stacks	*/
-  --font-body: Arial, Helvetica, sans-serif;
-  --font-headings: Georgia, serif;
+  	/* Font-Stacks	*/
+  	--font-body: Arial, Helvetica, sans-serif;
+  	--font-headings: Georgia, serif;
 	
 	/* Grid Variables */
 	--one-col: 100%;
@@ -292,6 +290,7 @@ main a:focus {
 .small-articles:hover {
 	transform: scale(1.05);
 	color: var(--brand-color);
+	text-decoration: none;
 }
 
 .articles-wrapper img {
@@ -331,6 +330,7 @@ main a:focus {
 
 	.small-articles {
 		width: var(--three-col);
+		max-width: 26rem;
 		min-width: 18rem;
 		margin: 0;
 	}
