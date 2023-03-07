@@ -214,43 +214,66 @@ nav.activated {
 /* Main
 --------------------------------------------- */
 
-/* main {
-} */
 
 .main-article {
 
 }
 
 .articles-wrapper{
-	max-width: 80rem;
+	width: 100%;
 	display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-	gap: var(--pad);
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
-.articles-wrapper a {
-	position: relative;
-	width: var(--three-col);
-	margin: 0;
+.small-articles {
+	--brand-color-light:#679ad98c; 
+
+	max-width: 30rem;
+	margin: var(--pad);
+
 	text-decoration: none;
+	color: #000;
+	box-shadow: 0 2px 3px 3px var(--brand-color-light);
+	border-radius: 8px;
+
+	overflow: hidden;
+}
+
+.small-articles:hover {
+	transform: scale(1.05);
+	color: var(--brand-color);
 }
 
 .articles-wrapper img {
+	width: var(--one-col);
 	height: 20rem;
 	object-fit: cover;
 	object-position: center;
 }
 
-.small-articles {
-	box-shadow: 0 2px 3px 3px var(--brand-color-light);
-	border-radius: 8px;
-	overflow: hidden;
-}
-
 .text-wrapper {
 	padding: var(--pad-half);
 }
+
+.text-wrapper h2{
+	margin-top: 0;
+}
+
+@media (min-width: 50rem) {
+
+	.articles-wrapper{
+		--pad: 2rem;
+		max-width: 90%;
+		gap: var(--pad);
+	}
+
+	.small-articles {
+		width: var(--three-col);
+		margin: 0;
+	}
+}
+
 
 
 /* Sidebar */
