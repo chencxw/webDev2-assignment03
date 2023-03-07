@@ -365,22 +365,33 @@ aside ul a:hover {
   background-color: var(--brand-color-light);
 }
 
-.site-footer ul {
-  list-style: none;
+.site-footer a {
+  text-decoration: none;
+  color: var(--text-color);
 }
 
-.site-footer li {
+.site-footer a:hover,
+.site-footer a:active,
+.site-footer a:focus {
+  text-decoration: underline;
+}
+
+.site-footer nav ul {
+  list-style: none;
+  padding: 0 .3rem;
+}
+
+.site-footer nav li {
   padding: .3rem;
 }
 
 .site-footer p {
-  padding-top: 2rem;
+  padding-top: 1.5rem;
   font-size: .8rem;
 }
 
 .social-media li {
   display: inline-block;
-  padding: .8rem;
 }
 
 .social-media svg {
