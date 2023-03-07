@@ -9,8 +9,8 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-            <a class="logo" href="#0"><img src="images/" alt="News Site Logo"/></a>
+    <header class="site-header">
+            <a class="logo" href="#0">CCY News</a>
 
             <button class="hamburger-menu" id="hamburger-menu">
                 <span class="hamburger-menu-content" tabindex="-1">
@@ -32,7 +32,7 @@
 
     <main>
         <header>
-            <h1>News Site</h1>
+            <h1>News</h1>
         </header>
 
         <section class="main-article">
@@ -47,10 +47,155 @@
             </ul>
 
         </section>
+
+
+        <div class="articles-wrapper">
+            <article class="small-articles">
+                <img src="images/police.jpg" alt="A policeman standing on the street.">
+                <div class="text-wrapper">
+                    <h2>
+                        <a href="">
+                            Family, community mourn 2 teens found dead in northern Manitoba
+                        </a>
+                    </h2>
+                    <p>Girls found outside and St. Theresa Point Chief believes drugs a factor in their deaths.</p>
+                </div>
+            </article>
+
+            <article class="small-articles">
+                <img src="images/business.jpg" alt="A person holding business newspaper.">
+                <div class="text-wrapper">
+                    <h2>
+                        <a href="">
+                            Nordstrom followed a familiar path to failure: too big, too fast — and not Canadian enough
+                        </a>
+                    </h2>
+                    <p>Chain launched in Canada in 2014 but will soon close all 13 locations.</p>
+                </div>
+            </article>
+
+            <article class="small-articles">
+                <img src="images/street.jpg" alt="Vintage bus on the street.">
+                <div class="text-wrapper">
+                    <h2>
+                        <a href="">
+                            Quebec summer camps racing to recruit staff
+                        </a>
+                    </h2>
+                    <p>Camps are looking to hire 20,000-25,000 monitors for this summer.</p>
+                </div>
+            </article>
+
+            <article class="small-articles">
+                <img src="images/parliament.jpg" alt="Charis.">
+                <div class="text-wrapper">
+                    <h2>
+                        <a href="">
+                            Do political parties need stronger rules for local nomination elections?
+                        </a>
+                    </h2>
+                    <p>In safe ridings, the race for a nomination can be more competitive than the election itself.</p>
+                </div>
+            </article>
+
+            <article class="small-articles">
+                <img src="images/turtle.jpg" alt="Image of a turtle.">
+                <div class="text-wrapper">
+                    <h2>
+                        <a href="">
+                            Ocean treaty: Historic agreement reached after decade of talks
+                        </a>
+                    </h2>
+                    <p>Nations have reached a historic agreement to protect the world's oceans following 10 years of negotiations.</p>
+                </div>
+            </article>
+
+            <article class="small-articles">
+                <img src="images/twitter.jpg" alt="Twitter on a mobile device.">
+                <div class="text-wrapper">
+                    <h2>
+                        <a href="">
+                            Twitter has tech issues for second time in week
+                        </a>
+                    </h2>
+                    <p>Twitter has experienced major problems with posting some images and links - the second time in a week it has suffered technical issues.</p>
+                </div>
+            </article>
+        </div>
+        
+        <aside>
+            <article>
+                <h3>Weather</h3>
+                <p>
+                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 10c-1.104 0-2-.896-2-2s.896-2 2-2 2 .896 2 2-.896 2-2 2m0-5c-1.657 0-3 1.343-3 3s1.343 3 3 3 3-1.343 3-3-1.343-3-3-3m-7 2.602c0-3.517 3.271-6.602 7-6.602s7 3.085 7 6.602c0 3.455-2.563 7.543-7 14.527-4.489-7.073-7-11.072-7-14.527m7-7.602c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602"/></svg>
+                    Surrey
+                </p>
+                <img src="images/weather.png" alt="weather forecast image">
+                <p><a href="#">See more &#8594;</a></p>
+            </article>
+
+            <article>
+                <h3>Trending Now</h3>
+
+                <ul>
+                    <li><a href="#"> <h4>TD Bank customer lostt $480 after e-transfer cancelled - despite having autodeposit</h4> </a></li>
+                    <li><a href="#"> <h4>Russian mercendary leader complains of critical ammunition shortage in battle of Bakhmut</h4> </a></li>
+                    <li><a href="#"> <h4>Serial killer Dellen Millard found guilty of assault in prison stabbing</h4> </a></li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Featured Picks</h3>
+
+                <ul>
+                    <li><a href="#"> <h4>She complained to CBC Toronto about her living conditions. Now she's facing eviction</h4> </a></li>
+                    <li><a href="#"> <h4>As holidaying Canadians return to Cuba, Cubans themselves are fleeing in record numbers</h4> </a></li>
+                </ul>
+            </article>
+        </aside>
+        
     </main>
 
-    <footer>
+    <footer class="site-footer">
+        <h3>Find us here</h3>
+        <nav class="social-media">
+            <ul>
+                <li>
+                    <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
+                    <svg aria-label="Twitter Icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z"/>
+                    </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                    <svg aria-label="Instagram Icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M14.829 6.302c-.738-.034-.96-.04-2.829-.04s-2.09.007-2.828.04c-1.899.087-2.783.986-2.87 2.87-.033.738-.041.959-.041 2.828s.008 2.09.041 2.829c.087 1.879.967 2.783 2.87 2.87.737.033.959.041 2.828.041 1.87 0 2.091-.007 2.829-.041 1.899-.086 2.782-.988 2.87-2.87.033-.738.04-.96.04-2.829s-.007-2.09-.04-2.828c-.088-1.883-.973-2.783-2.87-2.87zm-2.829 9.293c-1.985 0-3.595-1.609-3.595-3.595 0-1.985 1.61-3.594 3.595-3.594s3.595 1.609 3.595 3.594c0 1.985-1.61 3.595-3.595 3.595zm3.737-6.491c-.464 0-.84-.376-.84-.84 0-.464.376-.84.84-.84.464 0 .84.376.84.84 0 .463-.376.84-.84.84zm-1.404 2.896c0 1.289-1.045 2.333-2.333 2.333s-2.333-1.044-2.333-2.333c0-1.289 1.045-2.333 2.333-2.333s2.333 1.044 2.333 2.333zm-2.333-12c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.958 14.886c-.115 2.545-1.532 3.955-4.071 4.072-.747.034-.986.042-2.887.042s-2.139-.008-2.886-.042c-2.544-.117-3.955-1.529-4.072-4.072-.034-.746-.042-.985-.042-2.886 0-1.901.008-2.139.042-2.886.117-2.544 1.529-3.955 4.072-4.071.747-.035.985-.043 2.886-.043s2.14.008 2.887.043c2.545.117 3.957 1.532 4.071 4.071.034.747.042.985.042 2.886 0 1.901-.008 2.14-.042 2.886z"/>
+                    </svg>
+                    </a>
+                </li>
 
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                    <svg aria-label="Facebook Icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z"/>
+                    </svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <nav class="footer-links">
+            <ul>
+                <li><a href="#">Term of Use</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Contact CCY NEWS</a></li>
+            </ul>
+        </nav>
+
+
+
+        <p>&copy; 2023 CCY NEWS.</p>
     </footer>
     
 <script src="script/script.js"></script>
