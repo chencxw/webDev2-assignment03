@@ -1,16 +1,22 @@
 /* Global Variables */
 :root {
-  --bg-color: white;
-  --text-color: black;
 
-  /* Layout Variables */
-  --space: calc(30 / 16);
-  --pad: calc(var(--space) * 1rem);
-  --pad-half: calc(var(--pad) / 2);
+	--brand-color: #0A69DA;
+	--brand-color-light: #679ad9;
+	--text-color: #000000;
 
-  /* Font-Stacks	*/
-  --font-body: "Libre Franklin", sans-serif;
-  --font-headings: "Cormorant Garamond", serif;
+  	/* Layout Variables */
+  	--pad: 1rem;
+  	--pad-half: .5rem;
+
+  	/* Font-Stacks	*/
+  	--font-body: Arial, Helvetica, sans-serif;
+  	--font-headings: Georgia, serif;
+	
+	/* Grid Variables */
+	--one-col: 100%;
+	--two-col: 49%;
+	--three-col: 32%;
 }
 
 html {
@@ -41,6 +47,10 @@ nav a {
   font-family: var(--font-headings);
 }
 
+h1 {
+	font-size: 2.5rem;
+}
+
 
 /*--------------------------------------------------------------
 # Base
@@ -69,19 +79,6 @@ nav a {
     border: 0;
 }
 
-:root {
-    --brand-color: #0A69DA;
-    --brand-color-light: #679ad9;
-	--pad: 1rem;
-	--pad-half: .5rem;
-
-	/* Grid Variables */
-	--one-col: 100%;
-	--two-col: 49%;
-	--three-col: 32%;
-	--four-col: 23.5%;
-}
-
 /* Header (Navigation bar)
 --------------------------------------------- */
 .site-header {
@@ -90,22 +87,25 @@ nav a {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0.5rem 1rem;
-    border-bottom: 2px solid var(--brand-color);
+    /* border-bottom: 2px solid var(--brand-color); */
 	min-width: 15.625rem;
+	background-color: var(--brand-color-light)
 }
 
 .logo {
     width: fit-content;
+	font-family: var(--font-headings);
+	font-weight: 800 ;
 }
 
 .logo {
     text-decoration: none;
-    color: var(--brand-color);
+    color: var(--text-color);
     font-size: 1.8rem;
 }
 
 a.logo:visited {
-    color: var(--brand-color);
+    color: white;
 }
 
 .hamburger-menu {
@@ -202,14 +202,16 @@ nav.activated {
 	line-height: 40px;
 	text-align: center;
     font-size: 1.2rem;
-	font-family: var(--font-body);
+	font-family: var(--font-headings);
+	font-weight: 600;
 }
 
 #main-navigation a:hover,
 #main-navigation a:active,
 #main-navigation a:focus {
-  color: #fff;
-  background-color: var(--brand-color-light);
+	color: #fff;
+	background-color: var(--brand-color-light);
+	padding: 0.2rem 1rem;
 }
 
 @media (min-width: 50em) {
@@ -217,7 +219,7 @@ nav.activated {
 		width: fit-content;
 		height: auto;
 		visibility: visible;
-		background-color: #fff;
+		/* background-color: #fff; */
 	}
 
 	#main-navigation ul {
@@ -225,12 +227,10 @@ nav.activated {
 	}
 
 	#main-navigation a {
-		color: var(--brand-color);
+		color: var(--text-color);
 	}
 
 	#main-navigation a:hover {
-		color: #fff;
-		background-color: var(--brand-color-light);
 		padding: 0.2rem 1rem;
 	}
 
@@ -242,11 +242,14 @@ nav.activated {
 
 /* Main
 --------------------------------------------- */
-
 main {
   background-color: var(--bg-color, white);
   color: var(--text-color, black);
   padding: var(--pad);
+	max-width: 1920px;
+	background-color: var(--bg-color, white);
+	color: var(--text-color, black);
+	padding: var(--pad-half);
 }
 
 main a,
@@ -301,9 +304,12 @@ main a:focus {
 	overflow: hidden;
 }
 
-.small-articles:hover {
+.small-articles:hover
+.small-articles:active,
+.small-articles:focus {
 	transform: scale(1.05);
 	color: var(--brand-color);
+	text-decoration: none;
 }
 
 .articles-wrapper img {
@@ -323,16 +329,36 @@ main a:focus {
 
 @media (min-width: 50rem) {
 
+	main {
+		display: grid;
+		grid-template-columns: 3fr 1fr;
+	}
+
+	.main-article {
+		grid-column: 1/3;
+	}
+
 	.articles-wrapper{
 		--pad: 2rem;
-		max-width: 90%;
+		max-width: 100%;
 		gap: var(--pad);
+		grid-template-columns: 1/2;
+		grid-template-rows: 3/4;
+		padding: var(--pad)
 	}
 
 	.small-articles {
 		width: var(--three-col);
+		max-width: 26rem;
+		min-width: 18rem;
 		margin: 0;
 	}
+
+	aside {
+		grid-column: 2/3;
+		grid-row: 3/4;
+	}
+
 }
 
 
@@ -345,6 +371,10 @@ aside {
 
 aside article {
 	margin-bottom: 2rem;
+}
+
+aside article:first-child {
+	height: 15rem;
 }
 
 aside h3 {
