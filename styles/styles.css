@@ -194,16 +194,21 @@ main {
 /* Footer
 --------------------------------------------- */
 .site-footer {
-  padding: .5rem;
+  padding: .3rem 1rem;
   background-color: var(--brand-color-light);
 }
 
-.site-footer ul{
+.site-footer ul {
   list-style: none;
+}
+
+.site-footer li {
+  padding: .3rem;
 }
 
 .site-footer p {
   padding-top: 2rem;
+  font-size: .8rem;
 }
 
 .social-media li {
@@ -216,11 +221,19 @@ main {
   height: 2.5rem;
 }
 
+.footer-links {
+  border-top: 1px solid black;
+}
+
 @media (min-width: 50rem){
   .site-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .footer-links {
+    border-top: none;
   }
 }
 
