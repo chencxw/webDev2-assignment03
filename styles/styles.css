@@ -159,6 +159,7 @@ nav a:focus {
 
 /* Main
 --------------------------------------------- */
+
 main {
     /* display: flex;
     flex-direction: column; */
@@ -187,6 +188,7 @@ main {
     padding: var(--pad);
     border: 2px solid var(--brand-color);
 }
+
 
 /* Footer
 --------------------------------------------- */
