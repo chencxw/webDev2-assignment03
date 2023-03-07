@@ -327,7 +327,7 @@ main a:focus {
 	margin-top: 0;
 }
 
-@media (min-width: 50rem) {
+@media (min-width: 50em) {
 
 	main {
 		display: grid;
@@ -366,7 +366,7 @@ main a:focus {
 
 }
 
-@media (min-width: 62.5rem) {
+@media (min-width: 62.5em) {
 
   .main-article {
     display: flex;
@@ -483,7 +483,7 @@ aside ul a:hover {
   border-top: 1px solid black;
 }
 
-@media (min-width: 50rem){
+@media (min-width: 50em){
   .site-footer {
     display: flex;
     justify-content: space-between;
