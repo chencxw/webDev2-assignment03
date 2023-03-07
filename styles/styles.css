@@ -3,8 +3,6 @@
   --bg-color: white;
   --text-color: black;
 
-  --base-width: 90%;
-
   /* Layout Variables */
   --space: calc(30 / 16);
   --pad: calc(var(--space) * 1rem);
@@ -250,14 +248,30 @@ nav.activated {
 --------------------------------------------- */
 main {
 	max-width: 1920px;
+  background-color: var(--bg-color, white);
+  color: var(--text-color, black);
+  padding: var(--pad-half);
 }
 
 main > header {
 	padding-left: var(--pad)
 }
 
-.main-article {
+main a,
+main a:visited {
+  text-decoration: none;
+  color: var(--text-color);
+}
 
+main a:hover,
+main a:active,
+main a:focus {
+  color: var(--brand-color);
+  text-decoration: underline;
+}
+
+.main-article li {
+  color: var(--brand-color)
 }
 
 .articles-wrapper{
