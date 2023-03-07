@@ -193,6 +193,11 @@ main {
 /* Sidebar */
 aside {
 	padding: 1rem;
+	max-width: 20rem;
+}
+
+aside article {
+	margin-bottom: 2rem;
 }
 
 aside h3 {
@@ -200,7 +205,7 @@ aside h3 {
 }
 
 h3 + p > svg {
-	fill: var(--brand-color)
+	fill: var(--brand-color-light)
 }
 
 aside p > a {
@@ -214,6 +219,23 @@ aside p > a:focus {
 	color: var(--brand-color-light);
 }
 
+aside p > a:hover {
+	transition: all 0.5s;
+	font-size: 1.3rem;
+}
+
+aside li {
+	color: var(--brand-color)
+}
+
+aside ul a {
+	text-decoration: none;
+	color: #000;
+}
+
+aside ul a:hover {
+	color: var(--brand-color-light)
+}
 
 
 
