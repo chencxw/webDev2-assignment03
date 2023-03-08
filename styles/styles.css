@@ -397,6 +397,10 @@ aside article:first-child {
 	height: 15rem;
 }
 
+aside article:first-child p ~ img {
+	min-width: 285px;
+}
+
 aside h3 {
 	color: var(--brand-color)
 }
@@ -425,7 +429,7 @@ aside li {
 	color: var(--brand-color)
 }
 
-aside ul a {
+aside ul a[href="#"] {
 	text-decoration: none;
 	color: #000;
 }
