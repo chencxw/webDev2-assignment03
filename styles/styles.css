@@ -243,42 +243,52 @@ nav.activated {
 /* Main
 --------------------------------------------- */
 main {
-  background-color: var(--bg-color, white);
-  color: var(--text-color, black);
-  padding: var(--pad);
+  	background-color: var(--bg-color, white);
+  	color: var(--text-color, black);
 	max-width: 1920px;
-	background-color: var(--bg-color, white);
-	color: var(--text-color, black);
-	padding: var(--pad-half);
+	padding: var(--pad);
 }
 
-main a,
-main a:visited {
-  text-decoration: none;
-  color: var(--text-color);
+.main-article a,
+.main-article a:visited {
+  	text-decoration: none;
+  	color: var(--text-color, black);
 }
 
-main a:hover,
-main a:active,
-main a:focus {
-  color: var(--brand-color);
-  text-decoration: underline;
+.main-article a:hover,
+.main-article a:active,
+.main-article a:focus {
+  	color: var(--brand-color);
+  	text-decoration: underline;
 }
 
 .main-article {
-  width: 100%;
-  margin: 0 auto 3rem;
-  padding: 1rem 0;
-  border-bottom: double var(--brand-color-light);
+  	width: 100%;
+  	margin: 0 auto 3rem;
+  	padding: 1rem 0;
+  	border-bottom: double var(--brand-color-light);
 }
 
 .main-article img {
-  display: block;
-  object-fit: cover;
+  	display: block;
+  	border-radius: 8px;
 }
 
-.main-article li {
-  color: var(--brand-color)
+.main-article-text h2 + p {
+	font-size: 1.2rem;
+}
+
+.main-article-text p ~ p > svg {
+	width: 2rem;
+	vertical-align: middle;
+}
+
+.main-article-text li {
+  	color: var(--brand-color);
+}
+
+.main-article-text a[href="#"] > h3 {
+	font-size: 1rem;
 }
 
 
@@ -371,7 +381,7 @@ main a:focus {
 	.main-article {
 	  display: flex;
 	  flex-direction: row;
-		  grid-column: 1/3;
+		grid-column: 1/3;
 	}
   
 	.main-article img {
