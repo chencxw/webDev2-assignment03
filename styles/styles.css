@@ -452,46 +452,50 @@ aside ul a:hover {
 /* Footer
 --------------------------------------------- */
 .site-footer {
-  padding: .3rem 1rem;
-  background-color: var(--brand-color-light);
+	padding: .3rem 1rem;
+  	background-color: var(--brand-color-light);
 }
 
 .site-footer a {
-  text-decoration: none;
-  color: var(--text-color);
+  	text-decoration: none;
+  	color: var(--text-color, black);
 }
 
 .site-footer a:hover,
 .site-footer a:active,
 .site-footer a:focus {
-  text-decoration: underline;
+  	text-decoration: underline;
 }
 
 .site-footer nav ul {
-  list-style: none;
-  padding: 0 .3rem;
+  	list-style: none;
+  	padding: 0 .3rem;
 }
 
 .site-footer nav li {
-  padding: .3rem;
+  	padding: .3rem;
 }
 
 .site-footer p {
-  padding-top: 1.5rem;
-  font-size: .8rem;
+  	/* padding-top: 1.5rem; */
+  	font-size: .8rem;
 }
 
 .social-media li {
-  display: inline-block;
+  	display: inline-block;
 }
 
 .social-media svg {
-  width: 2.5rem;
-  height: 2.5rem;
+  	width: 2.5rem;
+  	height: 2.5rem;
 }
 
-.footer-links {
-  border-top: 1px solid black;
+.site-footer h3 + nav {
+  	border-bottom: 1px solid black;
+}
+
+.footer-links ul:last-child {
+	margin-bottom: 1.5rem;
 }
 
 @media (min-width: 50em){
@@ -501,8 +505,8 @@ aside ul a:hover {
     align-items: center;
   }
 
-  .footer-links {
-    border-top: none;
+  .site-footer h3 + nav {
+    	border-bottom: none;
   }
 }
 
