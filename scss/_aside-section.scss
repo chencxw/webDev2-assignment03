@@ -40,8 +40,10 @@ aside {
         color: $brand-color;
     }
     ul a {
-        color: #000;
-        text-decoration: none;
+        &[href='#'] {
+            color: #000;
+            text-decoration: none; 
+        }
         &:hover {
             @include hover-styles;
         }
