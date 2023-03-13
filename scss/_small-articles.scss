@@ -1,4 +1,5 @@
 @use 'variables' as *;
+@use 'mixin' as *;
 
 .articles-wrapper{
 	width: 100%;
@@ -16,7 +17,7 @@
 	text-decoration: none;
 	color: #000;
 	box-shadow: 0 2px 3px 3px $brand-color-light;
-	border-radius: 8px;
+	@include rounded-corners;
 
 	overflow: hidden;
     
