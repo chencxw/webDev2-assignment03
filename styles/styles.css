@@ -145,7 +145,6 @@
     padding: 0.2rem 1rem;
   }
 }
-
 main {
   background-color: white;
   color: #000000;
@@ -289,7 +288,7 @@ aside p > a:visited {
 aside li {
   color: #0A69DA;
 }
-aside ul a {
+aside ul a[href="#"] {
   color: #000;
   text-decoration: none;
 }
