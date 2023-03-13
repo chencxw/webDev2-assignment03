@@ -14,10 +14,13 @@ main {
     padding: $pad 0;
     border-bottom: double $brand-color-light;
 
-    a,
-    a:visited {
+    a, 
+    &:visited { 
         text-decoration: none;
-        color: $text-color;   
+        color: $text-color;
+    }
+    
+    a { 
         &:hover,
         &:active,
         &:focus {

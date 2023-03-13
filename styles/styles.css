@@ -158,15 +158,11 @@ main {
   padding: 1rem 0;
   border-bottom: double #679ad9;
 }
-.main-article a,
-.main-article a:visited {
+.main-article a, .main-article:visited {
   text-decoration: none;
   color: #000000;
 }
-.main-article a:hover, .main-article a:active, .main-article a:focus,
-.main-article a:visited:hover,
-.main-article a:visited:active,
-.main-article a:visited:focus {
+.main-article a:hover, .main-article a:active, .main-article a:focus {
   color: #0A69DA;
   text-decoration: none;
   text-decoration: underline;
