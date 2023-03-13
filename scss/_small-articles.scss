@@ -38,14 +38,21 @@
         object-fit: cover;
         object-position: center;
     }
-}
 
-.text-wrapper {
-	padding: $pad-half;
-    h2 {
-        margin-top: 0
+    .text-wrapper {
+        padding: $pad-half;
+        p {
+            margin-top: 0;
+        }
+        h2{
+            @extend p;  
+            font-size: 1.25rem;
+        }
+        
     }
 }
+
+
 
 @media (min-width: 50em) {
 

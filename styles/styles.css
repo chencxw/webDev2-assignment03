@@ -181,12 +181,14 @@
   object-fit: cover;
   object-position: center;
 }
-
-.text-wrapper {
+.articles-wrapper .text-wrapper {
   padding: 0.5rem;
 }
-.text-wrapper h2 {
+.articles-wrapper .text-wrapper p, .articles-wrapper .text-wrapper h2 {
   margin-top: 0;
+}
+.articles-wrapper .text-wrapper h2 {
+  font-size: 1.25rem;
 }
 
 @media (min-width: 50em) {
