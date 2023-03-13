@@ -1,7 +1,6 @@
 /* Layout Variables */
 /* Font-Stacks*/
 /* Grid Variables */
-
 .sr-only {
   position: absolute;
   width: 1px;
@@ -153,7 +152,6 @@
     padding: 0.2rem 1rem;
   }
 }
-
 .articles-wrapper {
   width: 100%;
   display: flex;
@@ -211,5 +209,7 @@
     max-width: 26rem;
     min-width: 18rem;
     margin: 0;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
