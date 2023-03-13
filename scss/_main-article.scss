@@ -1,5 +1,5 @@
 @use "variables" as *;
-@use "mixins" as *;
+@use "mixin" as *;
 
 main {
     background-color: white;
@@ -31,19 +31,22 @@ main {
         display: block;
         border-radius: 8px;
     }
-    
-    &-text {
-        @extend .main-article;
-       h2 + p {
-        font-size: 1.2rem;
-       } 
-       
-       li {
-        color: var(--brand-color);
-       }
-       a[href="#"] > h3 {
-        font-size: 1rem;
-      }
+}
+
+.main-article-text {
+    h2 + p {
+     font-size: 1.2rem;
+    } 
+    p ~ p > svg {
+        width: 2rem;
+        vertical-align: middle;
     }
 
-}
+    li {
+     color: var(--brand-color);
+    }
+
+    a[href="#"] > h3 {
+     font-size: 1rem;
+   }
+ }
