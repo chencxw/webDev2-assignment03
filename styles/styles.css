@@ -1,18 +1,60 @@
-/* Error: Expected expression.
- *    ,
- * 10 |     background-color: ;
- *    |                       ^
- *    '
- *   scss\_header.scss 10:23  @use
- *   scss\styles.scss 1:1     root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Expected expression.\a    \2577 \a 10 \2502      background-color: ;\a    \2502                        ^\a    \2575 \a   scss\\_header.scss 10:23  @use\a   scss\\styles.scss 1:1     root stylesheet";
+/* Layout Variables */
+/* Font-Stacks*/
+/* Grid Variables */
+.site-header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  min-width: 15.625rem;
+  background-color: #0A69DA;
 }
+
+footer {
+  padding: 0.3rem 1rem;
+  background-color: #679ad9;
+}
+footer a {
+  text-decoration: none;
+  color: #000000;
+}
+footer a:hover, footer a:active, footer a:focus {
+  text-decoration: underline;
+}
+footer nav ul {
+  list-style: none;
+  padding: 0 0.3rem;
+}
+footer nav li {
+  padding: 0.3rem;
+}
+footer p {
+  padding-top: 1.5rem;
+  font-size: 0.8rem;
+}
+
+.social-media li {
+  display: inline-block;
+}
+.social-media svg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.footer-links {
+  border-top: 1px solid black;
+}
+
+@media (min-width: 50em) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-links {
+    border-top: none;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

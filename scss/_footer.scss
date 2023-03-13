@@ -1,6 +1,7 @@
 @use "variables" as *;
 
 footer {
+    padding: .3rem 1rem;
     background-color: $brand-color-light;
     a {
         text-decoration: none;
@@ -49,5 +50,9 @@ footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    .footer-links {
+        border-top: none;
     }
 }
