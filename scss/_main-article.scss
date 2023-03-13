@@ -1,0 +1,49 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+main {
+    background-color: white;
+    color: $text-color;
+    max-width: 1920px;
+    padding: $pad;
+}
+
+.main-article {
+    width: 100%;
+    margin: 0 auto 3rem;
+    padding: $pad 0;
+    border-bottom: double $brand-color-light;
+
+    a,
+    a:visited {
+        text-decoration: none;
+        color: $text-color;
+    }
+    
+    &:hover,
+    &:active,
+    &:focus {
+        @include hover-styles;
+        text-decoration: underline;
+    }
+
+    img {
+        display: block;
+        border-radius: 8px;
+    }
+    
+    &-text {
+        @extend .main-article;
+       h2 + p {
+        font-size: 1.2rem;
+       } 
+       
+       li {
+        color: var(--brand-color);
+       }
+       a[href="#"] > h3 {
+        font-size: 1rem;
+      }
+    }
+
+}
