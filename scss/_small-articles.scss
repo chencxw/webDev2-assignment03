@@ -1,4 +1,5 @@
 @use 'variables' as *;
+@use 'mixin' as *;
 
 .articles-wrapper{
 	width: 100%;
@@ -16,7 +17,7 @@
 	text-decoration: none;
 	color: #000;
 	box-shadow: 0 2px 3px 3px $brand-color-light;
-	border-radius: 8px;
+	@include rounded-corners;
 
 	overflow: hidden;
     
@@ -37,14 +38,21 @@
         object-fit: cover;
         object-position: center;
     }
-}
 
-.text-wrapper {
-	padding: $pad-half;
-    h2 {
-        margin-top: 0
+    .text-wrapper {
+        padding: $pad-half;
+        p {
+            margin-top: 0;
+        }
+        h2{
+            @extend p;  
+            font-size: 1.25rem;
+        }
+        
     }
 }
+
+
 
 @media (min-width: 50em) {
 

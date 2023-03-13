@@ -45,7 +45,7 @@
   height: 24px;
   cursor: pointer;
 }
-.site-header .hamburger-menu .bar {
+.site-header .hamburger-menu .bar, .site-header .hamburger-menu .bar:after, .site-header .hamburger-menu .bar:before {
   display: block;
   height: 4px;
   background-color: #000000;
@@ -56,23 +56,14 @@
 }
 .site-header .hamburger-menu .bar:before {
   content: "";
-  height: 4px;
-  background-color: #000000;
-  width: 100%;
   position: absolute;
-  top: 10px;
   left: 0;
-  transition: all 0.3s ease-in-out;
 }
 .site-header .hamburger-menu .bar:after {
   content: "";
-  height: 4px;
-  background-color: #000000;
-  width: 100%;
   position: absolute;
   top: -10px;
   left: 0;
-  transition: all 0.3s ease-in-out;
 }
 .site-header #main-navigation {
   width: 100%;
@@ -116,14 +107,16 @@
   transition: height 0.3s ease, visibility 0s 0.3s;
 }
 
-.show .site-header .hamburger-menu .bar {
+.show .site-header .hamburger-menu .bar, .show .site-header .hamburger-menu .bar:before, .show .site-header .hamburger-menu .bar:after {
   background-color: transparent;
 }
 .show .site-header .hamburger-menu .bar:before {
+  background-color: #000;
   top: 0;
   transform: rotate(45deg);
 }
 .show .site-header .hamburger-menu .bar:after {
+  background-color: #000;
   top: 0;
   transform: rotate(-45deg);
 }
@@ -152,6 +145,7 @@
     padding: 0.2rem 1rem;
   }
 }
+
 main {
   background-color: white;
   color: #000000;
@@ -228,12 +222,14 @@ main {
   object-fit: cover;
   object-position: center;
 }
-
-.text-wrapper {
+.articles-wrapper .text-wrapper {
   padding: 0.5rem;
 }
-.text-wrapper h2 {
+.articles-wrapper .text-wrapper p, .articles-wrapper .text-wrapper h2 {
   margin-top: 0;
+}
+.articles-wrapper .text-wrapper h2 {
+  font-size: 1.25rem;
 }
 
 @media (min-width: 50em) {
@@ -258,6 +254,56 @@ main {
     margin: 0;
   }
 }
+
+aside {
+  padding: 1rem;
+  max-width: 25rem;
+}
+aside article {
+  margin-bottom: 2rem;
+}
+aside article:first-child {
+  height: 15rem;
+}
+aside article:first-child p ~ img {
+  min-width: 285px;
+}
+aside h3 {
+  color: #0A69DA;
+}
+aside h3 + p > svg {
+  fill: #679ad9;
+}
+aside p > a {
+  color: #0A69DA;
+  text-decoration: none;
+}
+aside p > a:hover {
+  color: #679ad9;
+  transition: all 0.5s;
+  font-size: 1.3rem;
+}
+aside p > a:active {
+  color: #679ad9;
+}
+aside p > a:focus {
+  color: #679ad9;
+}
+aside p > a:visited {
+  color: #679ad9;
+}
+aside li {
+  color: #0A69DA;
+}
+aside ul a {
+  color: #000;
+  text-decoration: none;
+}
+aside ul a:hover {
+  color: #0A69DA;
+  text-decoration: none;
+}
+
 footer {
   padding: 0.3rem 1rem;
   background-color: #679ad9;
