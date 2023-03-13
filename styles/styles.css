@@ -243,42 +243,52 @@ nav.activated {
 /* Main
 --------------------------------------------- */
 main {
-  background-color: var(--bg-color, white);
-  color: var(--text-color, black);
-  padding: var(--pad);
+  	background-color: var(--bg-color, white);
+  	color: var(--text-color, black);
 	max-width: 1920px;
-	background-color: var(--bg-color, white);
-	color: var(--text-color, black);
-	padding: var(--pad-half);
+	padding: var(--pad);
 }
 
-main a,
-main a:visited {
-  text-decoration: none;
-  color: var(--text-color);
+.main-article a,
+.main-article a:visited {
+  	text-decoration: none;
+  	color: var(--text-color, black);
 }
 
-main a:hover,
-main a:active,
-main a:focus {
-  color: var(--brand-color);
-  text-decoration: underline;
+.main-article a:hover,
+.main-article a:active,
+.main-article a:focus {
+  	color: var(--brand-color);
+  	text-decoration: underline;
 }
 
 .main-article {
-  width: 100%;
-  margin: 0 auto 3rem;
-  padding: 1rem 0;
-  border-bottom: double var(--brand-color-light);
+  	width: 100%;
+  	margin: 0 auto 3rem;
+  	padding: 1rem 0;
+  	border-bottom: double var(--brand-color-light);
 }
 
 .main-article img {
-  display: block;
-  object-fit: cover;
+  	display: block;
+  	border-radius: 8px;
 }
 
-.main-article li {
-  color: var(--brand-color)
+.main-article-text h2 + p {
+	font-size: 1.2rem;
+}
+
+.main-article-text p ~ p > svg {
+	width: 2rem;
+	vertical-align: middle;
+}
+
+.main-article-text li {
+  	color: var(--brand-color);
+}
+
+.main-article-text a[href="#"] > h3 {
+	font-size: 1rem;
 }
 
 
@@ -371,7 +381,7 @@ main a:focus {
 	.main-article {
 	  display: flex;
 	  flex-direction: row;
-		  grid-column: 1/3;
+		grid-column: 1/3;
 	}
   
 	.main-article img {
@@ -442,46 +452,50 @@ aside ul a:hover {
 /* Footer
 --------------------------------------------- */
 .site-footer {
-  padding: .3rem 1rem;
-  background-color: var(--brand-color-light);
+	padding: .3rem 1rem;
+  	background-color: var(--brand-color-light);
 }
 
 .site-footer a {
-  text-decoration: none;
-  color: var(--text-color);
+  	text-decoration: none;
+  	color: var(--text-color, black);
 }
 
 .site-footer a:hover,
 .site-footer a:active,
 .site-footer a:focus {
-  text-decoration: underline;
+  	text-decoration: underline;
 }
 
 .site-footer nav ul {
-  list-style: none;
-  padding: 0 .3rem;
+  	list-style: none;
+  	padding: 0 .3rem;
 }
 
 .site-footer nav li {
-  padding: .3rem;
+  	padding: .3rem;
 }
 
 .site-footer p {
-  padding-top: 1.5rem;
-  font-size: .8rem;
+  	/* padding-top: 1.5rem; */
+  	font-size: .8rem;
 }
 
 .social-media li {
-  display: inline-block;
+  	display: inline-block;
 }
 
 .social-media svg {
-  width: 2.5rem;
-  height: 2.5rem;
+  	width: 2.5rem;
+  	height: 2.5rem;
 }
 
-.footer-links {
-  border-top: 1px solid black;
+.site-footer h3 + nav {
+  	border-bottom: 1px solid black;
+}
+
+.footer-links ul:last-child {
+	margin-bottom: 1.5rem;
 }
 
 @media (min-width: 50em){
@@ -491,8 +505,8 @@ aside ul a:hover {
     align-items: center;
   }
 
-  .footer-links {
-    border-top: none;
+  .site-footer h3 + nav {
+    	border-bottom: none;
   }
 }
 
