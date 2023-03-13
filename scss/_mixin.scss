@@ -3,3 +3,7 @@
 @mixin hover-styles {
     $color: $brand-color;
 }
+
+@mixin rounded-corners {
+    border-radius: 8px;
+}
