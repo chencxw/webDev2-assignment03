@@ -145,7 +145,6 @@
     padding: 0.2rem 1rem;
   }
 }
-
 main {
   background-color: white;
   color: #000000;
@@ -164,7 +163,12 @@ main {
   text-decoration: none;
   color: #000000;
 }
-.main-article:hover, .main-article:active, .main-article:focus {
+.main-article a:hover, .main-article a:active, .main-article a:focus,
+.main-article a:visited:hover,
+.main-article a:visited:active,
+.main-article a:visited:focus {
+  color: #0A69DA;
+  text-decoration: none;
   text-decoration: underline;
 }
 .main-article img {
@@ -180,7 +184,7 @@ main {
   vertical-align: middle;
 }
 .main-article-text li {
-  color: var(--brand-color);
+  color: #0A69DA;
 }
 .main-article-text a[href="#"] > h3 {
   font-size: 1rem;
@@ -190,7 +194,10 @@ main {
   .main-article {
     display: flex;
     flex-direction: row;
-    grid-column: 1/3;
+    padding-bottom: 2rem;
+  }
+  .main-article-text {
+    margin-left: 2rem;
   }
 }
 .articles-wrapper {
@@ -254,7 +261,6 @@ main {
     margin: 0;
   }
 }
-
 aside {
   padding: 1rem;
   max-width: 25rem;
