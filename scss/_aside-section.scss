@@ -1,0 +1,49 @@
+@use 'variables' as *;
+@use 'mixin' as *;
+
+aside {
+    padding: 1rem;
+	max-width: 25rem;
+    article {
+        margin-bottom: 2rem;
+        &:first-child {
+            height: 15rem;
+            p ~ img {
+                min-width: 285px; 
+            }
+        }
+    }
+    h3 {
+        color: $brand-color;
+        & + p > svg {
+            fill: $brand-color-light;
+        }
+    }
+    p > a {
+        @include hover-styles;
+    }
+    p > a:hover {
+        color: $brand-color-light;
+        transition: all 0.5s;
+        font-size: 1.3rem;
+    }
+    p > a:active {
+        color: $brand-color-light;
+    }
+    p > a:focus {
+        color: $brand-color-light;
+    }
+    p > a:visited {
+        color: $brand-color-light;
+    }
+    li {
+        color: $brand-color;
+    }
+    ul a {
+        color: #000;
+        text-decoration: none;
+        &:hover {
+            @include hover-styles;
+        }
+    }
+}
