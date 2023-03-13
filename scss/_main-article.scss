@@ -1,0 +1,52 @@
+@use "variables" as *;
+@use "mixin" as *;
+
+main {
+    background-color: white;
+    color: $text-color;
+    max-width: 1920px;
+    padding: $pad;
+}
+
+.main-article {
+    width: 100%;
+    margin: 0 auto 3rem;
+    padding: $pad 0;
+    border-bottom: double $brand-color-light;
+
+    a,
+    a:visited {
+        text-decoration: none;
+        color: $text-color;
+    }
+    
+    &:hover,
+    &:active,
+    &:focus {
+        @include hover-styles;
+        text-decoration: underline;
+    }
+
+    img {
+        display: block;
+        border-radius: 8px;
+    }
+}
+
+.main-article-text {
+    h2 + p {
+     font-size: 1.2rem;
+    } 
+    p ~ p > svg {
+        width: 2rem;
+        vertical-align: middle;
+    }
+
+    li {
+     color: var(--brand-color);
+    }
+
+    a[href="#"] > h3 {
+     font-size: 1rem;
+   }
+ }
