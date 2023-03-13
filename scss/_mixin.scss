@@ -4,3 +4,7 @@
     color: $brand-color;
     text-decoration: none;
 }
+
+@mixin rounded-corners {
+    border-radius: 8px;
+}
