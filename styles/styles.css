@@ -99,17 +99,17 @@
 }
 .site-header #main-navigation a:hover {
   color: #fff;
-  background-color: var(--brand-color-light);
+  background-color: #679ad9;
   padding: 0.2rem 1rem;
 }
 .site-header #main-navigation a:active {
   color: #fff;
-  background-color: var(--brand-color-light);
+  background-color: #679ad9;
   padding: 0.2rem 1rem;
 }
 .site-header #main-navigation a:focus {
   color: #fff;
-  background-color: var(--brand-color-light);
+  background-color: #679ad9;
   padding: 0.2rem 1rem;
 }
 .site-header nav.activated {
@@ -131,6 +131,26 @@
   transition: height 0.3s ease, visibility 0s;
   visibility: visible;
   height: 240px;
+}
+
+@media (min-width: 50em) {
+  .site-header .hamburger-menu {
+    display: none;
+  }
+  .site-header #main-navigation {
+    width: fit-content;
+    height: auto;
+    visibility: visible;
+  }
+  .site-header #main-navigation ul {
+    display: flex;
+  }
+  .site-header #main-navigation a {
+    color: #000000;
+  }
+  .site-header #main-navigation a:hover {
+    padding: 0.2rem 1rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
