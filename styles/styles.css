@@ -162,6 +162,7 @@ main {
   text-decoration: none;
   color: #000000;
 }
+
 .main-article a:hover, .main-article a:active, .main-article a:focus {
   color: #0A69DA;
   text-decoration: none;
@@ -297,7 +298,7 @@ aside p > a:visited {
 aside li {
   color: #0A69DA;
 }
-aside ul a {
+aside ul a[href="#"] {
   color: #000;
   text-decoration: none;
 }
