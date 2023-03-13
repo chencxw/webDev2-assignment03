@@ -1,5 +1,16 @@
 @use 'variables' as *;
 
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
 .site-header {
     display: flex;
     align-items: center;
@@ -61,16 +72,67 @@
             }
         }
     }
+    #main-navigation {
+        width: 100%;
+        height: 0;
+        visibility: hidden;
+        overflow: hidden;
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            padding: 0.2rem 1rem;
+            display: block;
+            border-right: none;
+            color: #000;
+            line-height: 40px;
+            text-align: center;
+            font-size: 1.2rem;
+            font-family: $font-headings;
+            font-weight: 600;
+            &:hover {
+                color: #fff;
+                background-color: var(--brand-color-light);
+                padding: 0.2rem 1rem;
+            }
+            &:active {
+                color: #fff;
+                background-color: var(--brand-color-light);
+                padding: 0.2rem 1rem;
+            }
+            &:focus {
+                color: #fff;
+                background-color: var(--brand-color-light);
+                padding: 0.2rem 1rem;
+            }
+            
+        }
+    }
+    nav.activated {
+        transition: height 0.3s ease, visibility 0s 0.3s;
+    }
 }
 
-.show .bar {
-	background-color: transparent;
-    &:before {
-        top: 0;
-        transform: rotate(45deg);
+.show {
+    .site-header .hamburger-menu .bar {
+        background-color: transparent;
+        &:before {
+            top: 0;
+            transform: rotate(45deg);
+        }
+        &:after {
+            top: 0;
+            transform: rotate(-45deg);
+        }
     }
-    &:after {
-        top: 0;
-        transform: rotate(-45deg);
+    #main-navigation {
+        transition: height 0.3s ease, visibility 0s;
+        visibility: visible;
+        height: 240px;
     }
+
 }
+
