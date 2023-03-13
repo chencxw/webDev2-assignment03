@@ -14,18 +14,21 @@ main {
     padding: $pad 0;
     border-bottom: double $brand-color-light;
 
-    a,
-    a:visited {
+    a, 
+    &:visited { 
         text-decoration: none;
         color: $text-color;
     }
     
-    &:hover,
-    &:active,
-    &:focus {
-        @include hover-styles;
-        text-decoration: underline;
+    a { 
+        &:hover,
+        &:active,
+        &:focus {
+            @include hover-styles;
+            text-decoration: underline;
+        }
     }
+    
 
     img {
         display: block;
@@ -43,10 +46,23 @@ main {
     }
 
     li {
-     color: var(--brand-color);
+     color: $brand-color;
     }
 
     a[href="#"] > h3 {
      font-size: 1rem;
    }
+ }
+
+@media (min-width: 62.5em) {
+
+    .main-article {
+        display: flex;
+        flex-direction: row; 
+        padding-bottom: 2rem;
+    }
+
+    .main-article-text {
+        margin-left: 2rem;
+    }
  }
