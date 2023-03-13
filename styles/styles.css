@@ -152,6 +152,52 @@
     padding: 0.2rem 1rem;
   }
 }
+
+footer {
+  padding: 0.3rem 1rem;
+  background-color: #679ad9;
+}
+footer a {
+  text-decoration: none;
+  color: #000000;
+}
+footer a:hover, footer a:active, footer a:focus {
+  text-decoration: underline;
+}
+footer nav ul {
+  list-style: none;
+  padding: 0 0.3rem;
+}
+footer nav li {
+  padding: 0.3rem;
+}
+footer p {
+  padding-top: 1.5rem;
+  font-size: 0.8rem;
+}
+
+.social-media li {
+  display: inline-block;
+}
+.social-media svg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.footer-links {
+  border-top: 1px solid black;
+}
+
+@media (min-width: 50em) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-links {
+    border-top: none;
+  }
+    
 .articles-wrapper {
   width: 100%;
   display: flex;
@@ -209,6 +255,7 @@
     max-width: 26rem;
     min-width: 18rem;
     margin: 0;
+
   }
 }
 

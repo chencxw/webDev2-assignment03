@@ -1,0 +1,58 @@
+@use "variables" as *;
+
+footer {
+    padding: .3rem 1rem;
+    background-color: $brand-color-light;
+    a {
+        text-decoration: none;
+        color: $text-color;
+        &:hover,
+        &:active,
+        &:focus {
+            text-decoration: underline;
+        }
+    }
+
+    nav {
+        ul {
+            list-style: none;
+            padding: 0 .3rem;
+        }
+
+        li {
+            padding: .3rem;
+        }
+    }
+
+    p {
+        padding-top: 1.5rem;
+        font-size: .8rem;
+    }    
+}
+
+.social-media {
+    li {
+        display: inline-block;
+    }
+
+    svg {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
+
+.footer-links {
+    border-top: 1px solid black;
+}
+
+@media (min-width: 50em){
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-links {
+        border-top: none;
+    }
+}
