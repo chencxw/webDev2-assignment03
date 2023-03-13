@@ -1,14 +1,18 @@
-/* Layout Variables */
-/* Font-Stacks*/
-/* Grid Variables */
-.small-articles {
-  max-width: 30rem;
-  margin: 1rem;
-  text-decoration: none;
-  color: #000;
-  box-shadow: 0 2px 3px 3px var(--brand-color-light);
-  border-radius: 8px;
-  overflow: hidden;
-}
+/* Error: Expected expression.
+ *    ,
+ * 10 |     background-color: ;
+ *    |                       ^
+ *    '
+ *   scss\_header.scss 10:23  @use
+ *   scss\styles.scss 1:1     root stylesheet */
 
-/*# sourceMappingURL=styles.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Expected expression.\a    \2577 \a 10 \2502      background-color: ;\d\a    \2502                        ^\a    \2575 \a   scss\\_header.scss 10:23  @use\a   scss\\styles.scss 1:1     root stylesheet";
+}
