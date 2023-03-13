@@ -1,7 +1,8 @@
 @use 'variables' as *;
 
 @mixin hover-styles {
-    $color: $brand-color;
+    color: $brand-color;
+    text-decoration: none;
 }
 
 @mixin rounded-corners {
